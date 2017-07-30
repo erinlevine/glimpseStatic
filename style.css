@@ -176,6 +176,8 @@ h3 {
 	color: white;
 }
 
-.col-lg-4 {
-	align-content: center !important;
+
+
+.align-items-center {
+	text-align: center;
 }

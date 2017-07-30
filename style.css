@@ -124,3 +124,16 @@
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+.about-sec {
+	background-color: #FEA680;
+}
+
+.glimpseAbout {
+	text-transform: lowercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.aboutP {
+	text-transform: lowercase;
+	font-family: 'Roboto', sans-serif;
+}

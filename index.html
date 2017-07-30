@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>glimpse || a quick view of your shared calendar</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Roboto" rel="stylesheet">
-		<script src="https://use.fontawesome.com/5015dc676a.js"></script>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-			<!-- Overlay -->
-			<div class="overlay"></div>
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#bs-carousel" data-slide-to="1"></li>
-				<li data-target="#bs-carousel" data-slide-to="2"></li>
-				<li data-target="#bs-carousel" data-slide-to="3"></li>
-				<li data-target="#bs-carousel" data-slide-to="4"></li>
-			</ol>
-			
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item slides active">
-					<div class="slide-1"></div>
-					<div class="hero">
-						<hgroup>
+
+<head>
+	<title>glimpse || a quick view of your shared calendar</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Roboto" rel="stylesheet">
+	<script src="https://use.fontawesome.com/5015dc676a.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+		<!-- Overlay -->
+		<div class="overlay"></div>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#bs-carousel" data-slide-to="1"></li>
+			<li data-target="#bs-carousel" data-slide-to="2"></li>
+			<li data-target="#bs-carousel" data-slide-to="3"></li>
+			<li data-target="#bs-carousel" data-slide-to="4"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item slides active">
+				<div class="slide-1"></div>
+				<div class="hero">
+					<hgroup>
 						<h1>glimpse</h1>
 						<h3>A unique shared calendar app for all the groups in your life.</h3>
-						</hgroup>
-						<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#myModal">login</button>
-<!--						<button class="btn btn-hero btn-lg" role="button">Login</button>-->
-						<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#myModal">sign up</button>
-					</div>
+					</hgroup>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#myModal">login</button>
+					<!--						<button class="btn btn-hero btn-lg" role="button">Login</button>-->
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#myModal">sign up</button>
 				</div>
-				<div class="item slides">
-					<div class="slide-2"></div>
-					<div class="hero">
-						<hgroup>
+			</div>
+			<div class="item slides">
+				<div class="slide-2"></div>
+				<div class="hero">
+					<hgroup>
 						<h1>glimpse</h1>
 						<h3>find out how glimpse makes organizing easier</h3>
-						</hgroup>
-						<button class="btn btn-hero btn-lg" role="button">see all features</button>
-					</div>
+					</hgroup>
+					<button class="btn btn-hero btn-lg" role="button">see all features</button>
 				</div>
-				<div class="item slides">
-					<div class="slide-3"></div>
-					<div class="hero">
-						<hgroup>
+			</div>
+			<div class="item slides">
+				<div class="slide-3"></div>
+				<div class="hero">
+					<hgroup>
 						<h1>glimpse</h1>
 						<h3>start now and create a shared calendar for everyone</h3>
-						</hgroup>
-						<button class="btn btn-hero btn-lg" role="button">sign up</button>
-					</div>
+					</hgroup>
+					<button class="btn btn-hero btn-lg" role="button">sign up</button>
 				</div>
-				<div class="item slides">
-					<div class="slide-4"></div>
-					<div class="hero">
-						<hgroup>
+			</div>
+			<div class="item slides">
+				<div class="slide-4"></div>
+				<div class="hero">
+					<hgroup>
 						<h1>glimpse</h1>
 						<h3>join other shared calendars and begin planning your next adventure</h3>
-						</hgroup>
-						<button class="btn btn-hero btn-lg" role="button">login</button>
-					</div>
+					</hgroup>
+					<button class="btn btn-hero btn-lg" role="button">login</button>
 				</div>
-				<div class="item slides">
-					<div class="slide-5"></div>
-					<div class="hero">
-						<hgroup>
+			</div>
+			<div class="item slides">
+				<div class="slide-5"></div>
+				<div class="hero">
+					<hgroup>
 						<h1>glimpse</h1>
-						
-						</hgroup>
-						
-					</div>
+
+					</hgroup>
+
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+
+	<!--SECTION FOR WHATEVER	-->
+	<section class="about-sec parallax-section" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h2>what is glimpse?</h2>
+				</div>
+				<div class="col-md-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quasi, aspernatur quod recusandae ipsam, veritatis ipsa nulla nostrum! Perspiciatis odit aut voluptas dolorum officiis, vero repellendus corporis suscipit iste illo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum amet quia cumque eligendi iste maxime, ea, cupiditate id numquam iusto quisquam veniam labore facilis non expedita quis? Autem, tempore architecto.</p>
+					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</body>
+
 </html>

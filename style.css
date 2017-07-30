@@ -188,3 +188,15 @@ h3 {
 }
 
 
+
+#footer {
+	background-color: black;
+	margin: 0;
+}
+
+#footerP {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #FEDC3D;
+	padding: 25px;
+}

@@ -166,3 +166,16 @@
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
+
+h3 {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.fa-5x {
+	color: white;
+}
+
+.col-lg-4 {
+	align-content: center !important;
+}

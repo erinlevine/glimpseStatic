@@ -14,8 +14,9 @@
 
 <body>
 	<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div id="slider-top" class="carousel slide col-lg-12" data-ride="carousel">
 		<!-- Overlay -->
-		<div class="overlay"></div>
+		<!-- <div class="overlay"></div> -->
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
@@ -34,9 +35,8 @@
 						<h1>glimpse</h1>
 						<h3>A unique shared calendar app for all the groups in your life.</h3>
 					</hgroup>
-					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#myModal">login</button>
-					<!--						<button class="btn btn-hero btn-lg" role="button">Login</button>-->
-					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#myModal">sign up</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#loginModal">login</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#signUpModal">sign up</button>
 				</div>
 			</div>
 			<div class="item slides">
@@ -46,7 +46,8 @@
 						<h1>glimpse</h1>
 						<h3>find out how glimpse makes organizing easier</h3>
 					</hgroup>
-					<button class="btn btn-hero btn-lg" role="button">see all features</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#loginModal">login</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#signUpModal">sign up</button>
 				</div>
 			</div>
 			<div class="item slides">
@@ -56,7 +57,8 @@
 						<h1>glimpse</h1>
 						<h3>start now and create a shared calendar for everyone</h3>
 					</hgroup>
-					<button class="btn btn-hero btn-lg" role="button">sign up</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#loginModal">login</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#signUpModal">sign up</button>
 				</div>
 			</div>
 			<div class="item slides">
@@ -66,7 +68,8 @@
 						<h1>glimpse</h1>
 						<h3>join other shared calendars and begin planning your next adventure</h3>
 					</hgroup>
-					<button class="btn btn-hero btn-lg" role="button">login</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#loginModal">login</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#signUpModal">sign up</button>
 				</div>
 			</div>
 			<div class="item slides">
@@ -74,15 +77,87 @@
 				<div class="hero">
 					<hgroup>
 						<h1>glimpse</h1>
-
+						<h3>get started today</h3>
 					</hgroup>
-
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#loginModal">login</button>
+					<button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#signUpModal">sign up</button>
 				</div>
 			</div>
 		</div>
+		</div>
 	</div>
 
-	<!--SECTION FOR WHATEVER	-->
+	<!-- MODAL FOR SIGN UP -->
+	<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+						<div class="form-group">
+							<label for="firstName">First Name:</label>
+							<input type="text" class="form-control" id="firstName">
+	        	</div>
+						
+						<div class="form-group">
+							<label for="lastName">Last Name:</label>
+							<input type="text" class="form-control" id="email">
+	        	</div>
+
+	        	<div class="form-group">
+							<label for="email">Email Address:</label>
+							<input type="email" class="form-control" id="email">
+	        	</div>
+						
+						<div class="form-group">
+							<label for="password">Password:</label>
+							<input type="password" class="form-control" id="password">
+	        	</div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Sign Up</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- MODAL FOR LOG IN -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="signUpModal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Login</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	        	<div class="form-group">
+							<label for="email">Email Address:</label>
+							<input type="email" class="form-control" id="email">
+	        	</div>
+						
+						<div class="form-group">
+							<label for="password">Password:</label>
+							<input type="password" class="form-control" id="password">
+	        	</div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Login</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<!--SECTION FOR DESCRIPTION OF APP	-->
 	<section class="about-sec parallax-section" id="about">
 		<div class="container">
 			<div class="action-box text-left">
@@ -92,12 +167,11 @@
 				<div class="action-box text-left">
 					<p class="aboutP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quasi, aspernatur quod recusandae ipsam, veritatis ipsa nulla nostrum! Perspiciatis odit aut voluptas dolorum officiis, vero repellendus corporis suscipit iste illo.</p>
 					<p class="aboutP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum amet quia cumque eligendi iste maxime, ea, cupiditate id numquam iusto quisquam veniam labore facilis non expedita quis? Autem, tempore architecto.</p>
-				
-			
-				
 			</div>
 		</div>
 	</section>
+
+	<!-- SECTION FOR AWESOME TALKING POINTS -->
 	
 	<section class="action-sec" id="callToAction">
           <div class="container center">
@@ -125,18 +199,93 @@
 			  
           </div>
       </section>
+
+ <!-- SECTION FOR TESTIMONIALS -->
 	
-	<section class="action-sec" id="testimonials">
-          <div class="container">
-              <div class="action-box text-right"><h2 class="testimonialsH1">testimonials </h2></div>
-              <br>
-			  <div class="action-box text-left"><h4><i>"Blah blah"</i> - Erin</h4></div>
-			 <div class="action-box text-right"><h4><i>"Blah blah"</i> - Erin</h4></div>
-			 <div class="action-box text-center"><h4><i>"Blah blah"</i> - Erin</h4></div>
-          </div>
-      </section>
+	<!-- <section class="action-sec" id="testimonials">
+    <div class="container">
+      <div class="row">
+      	<div class="action-box text-left"><h2 class="testimonialsH1">testimonials </h2></div>
+      </div>
+      	<br>
+      <div class="row">
+      	<div class="col-md-4">
+			  	<div class="action-box text-center"><h4><i>"Blah blah"</i> - Erin</h4></div>
+			  </div>
+			  <div class="col-md-4">
+			 		<div class="action-box text-center"><h4><i>"It has never been so easy to plan a weekend with my friends!"</i> - Ruby</h4></div>
+				</div>
+				<div class="col-md-4">
+			 		<div class="action-box text-center"><h4><i>"Blah blah"</i> - Erin</h4></div>
+				</div>
+			</div>
+    </div>
+  </section> -->
+
+<div class="container" id="quoteCarousel">
+	<div class="row">
+		<div class="col-md-12" data-wow-delay="0.2s">
+			<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+				<!-- Bottom Carousel Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="img/sunglasses-1284255_640.jpg" alt="smiling young lady">
+					</li>
+					<li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="img/smile-1726471_640.jpg" alt="smiling nerd">
+					</li>
+					<li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="img/portrait-597173_640.jpg" alt="young lady with hat">
+					</li>
+				</ol>
+				<!-- Carousel Slides / Quotes -->
+				<div class="carousel-inner text-center">
+					<!-- Quote 1 -->
+					<div class="item active">
+						<blockquote>
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<p>Making plans with friends and family has never been easier! Glimpse allows me to plan ahead for special events and make sure that everyone can attend. 
+									<br>
+									Bye, endless group texts!</p>
+									<small>Sonia</small>
+								</div>
+							</div>
+						</blockquote>
+					</div>
+					<!-- Quote 2 -->
+					<div class="item">
+						<blockquote>
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<p>My calendar used to be so unorganized. I never knew where I was going to be on any given day, let alone weeks in advance. Signing up for Glimpse was the best thing I could have done. Not only can my family see where I’m going each weekend, but it allows me to remain organized.</p>
+									<small>Paul</small>
+								</div>
+							</div>
+						</blockquote>
+					</div>
+					<!-- Quote 3 -->
+					<div class="item">
+						<blockquote>
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<p>I love the fact that I can have many calendars for lots of groups. It allows me to check in with my family on one calendar, but also see what my friends are up to on a totally separate calendar. This makes planning activities a total breeze!</p>
+									<small>Ruby</small>
+								</div>
+							</div>
+						</blockquote>
+					</div>
+				</div>
+				<!-- Carousel Buttons Next/Prev -->
+				<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+				<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+
       
-      <footer className="container-fluid text-center" id="footer">
+  <!-- FOOTER -->
+
+
+    <footer className="container-fluid text-center" id="footer">
 			<p id="footerP">Created with love by: <a href="http://www.github.com/erinlevine" target="_blank">Erin</a>, <a href="http://www.github.com/njedic" target="_blank">Nikki</a>, <a href="http://www.github.com/emilypo89" target="_blank">Emily</a>, and <a href="http://www.github.com/adamk1230" target="_blank" >Adam</a></p>
 		</footer>
 </body>

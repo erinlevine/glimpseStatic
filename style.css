@@ -1,3 +1,6 @@
+body{
+  background-color: #01ABAA;
+}
 
 .fade-carousel {
     position: relative;
@@ -100,35 +103,29 @@
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(img/friends3.jpg); 
+  background-image: url(img/TESTFriendship%20%28800x534%29.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(img/friends2.jpg);
+  background-image: url(img/friends2%20%28800x534%29.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(img/friends1.jpg);
+  background-image: url(img/friends1%20%28800x534%29.jpg);
 }
 .fade-carousel .slides .slide-4 {
-  background-image: url(img/friends4.jpg);
+  background-image: url(img/friends4%20%28800x534%29.jpg);
 }
 .fade-carousel .slides .slide-5 {
-  background-image: url(img/friends5.jpg);
+  background-image: url(img/friends5%20%28800x534%29.jpg);
 }
 
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
-}
+#slider-top{
+  padding: 0;
 
-
+}
 .glimpseAbout {
 	text-transform: lowercase;
 	font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
 }
 
 .aboutP {
@@ -138,7 +135,7 @@
 
 #about {
 	background-color: #FEA680;
-	padding: 12px
+	padding: 12px;
 }
 
 
@@ -146,6 +143,8 @@
 	text-transform: lowercase;
 	font-family: 'Roboto', sans-serif;
 	color: #FEDC3D;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #testimonials {
@@ -188,6 +187,84 @@ h3 {
 }
 
 
+/* Quote Carousel */
+#quoteCarousel{
+  background-color: #01ABAA;
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #FEA680;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+    color: #fedc3d;
+}
+
+blockquote .small, blockquote footer, blockquote small {
+    display: block;
+    font-size: 30px;
+    color: #fedc3d;
+     font-family: 'Just Another Hand', cursive;
+}
+
 
 #footer {
 	background-color: black;
@@ -199,4 +276,14 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 	color: #FEDC3D;
 	padding: 25px;
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
 }
